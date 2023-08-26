@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Hydroponics_Major_Project"
         tools:targetApi="31">
         <activity
+            android:name=".ScrollActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
