@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Hydroponics_Major_Project</string>
+    <string name="app_name">Hydroponic App</string>
+    <string name="app_description">Monitor and control your hydroponic system with ease.</string>
+    <string name="start_button">Start</string>
+    <string name="next_button">Next</string>
+    <string name="hydroponic_system">Hydroponic System</string>
+    <string name="live_status">Live Status</string>
 </resources>
