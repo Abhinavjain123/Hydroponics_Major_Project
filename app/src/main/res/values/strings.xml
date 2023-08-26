@@ -4,5 +4,20 @@
     <string name="start_button">Start</string>
     <string name="next_button">Next</string>
     <string name="hydroponic_system">Hydroponic System</string>
-    <string name="live_status">Live Status</string>
+    <string name="choose_crop">Choose Crop</string>
+
+
+    <string-array name="vegetables">
+        <item>Tomato</item>
+        <item>Lettuce</item>
+        <item>cucumber</item>
+        <item>spinach</item>
+    </string-array>
+
+    <string-array name="age">
+        <item>3 Month</item>
+        <item>5 Month</item>
+        <item>7 Month</item>
+        <item>9 Month</item>
+    </string-array>
 </resources>
