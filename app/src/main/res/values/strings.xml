@@ -5,6 +5,7 @@
     <string name="next_button">Next</string>
     <string name="hydroponic_system">Hydroponic System</string>
     <string name="choose_crop">Choose Crop</string>
+    <string name="live_status">Live Status</string>
 
 
     <string-array name="vegetables">
