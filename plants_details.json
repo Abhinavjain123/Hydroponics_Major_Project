@@ -1,0 +1,260 @@
+{
+    "plants": [
+      {
+        "name": "Lettuce",
+        "type": "Leafy Green",
+        "environment": {
+          "temperature": {
+            "min": 10,
+            "max": 24
+          },
+          "pH": {
+            "min": 5.5,
+            "max": 6.5
+          },
+          "humidity": {
+            "min": 50,
+            "max": 70
+          },
+          "lightDuration": 16
+        },
+        "nutrients": {
+          "totalPPM": 800,
+          "stages": [
+            {
+              "name": "Grow",
+              "nutrientRatio": {
+                "N": 3,
+                "P": 1,
+                "K": 2
+              },
+              "durationDays": 14
+            },
+            {
+              "name": "Micro",
+              "nutrientRatio": {
+                "N": 1,
+                "P": 2,
+                "K": 2
+              },
+              "durationDays": 7
+            },
+            {
+              "name": "Bloom",
+              "nutrientRatio": {
+                "N": 1,
+                "P": 2,
+                "K": 3
+              },
+              "durationDays": 7
+            }
+          ]
+        }
+      },
+      {
+        "name": "Spinach",
+        "type": "Leafy Green",
+        "environment": {
+          "temperature": {
+            "min": 10,
+            "max": 25
+          },
+          "pH": {
+            "min": 6.0,
+            "max": 7.0
+          },
+          "humidity": {
+            "min": 50,
+            "max": 70
+          },
+          "lightDuration": 14
+        },
+        "nutrients": {
+          "totalPPM": 900,
+          "stages": [
+            {
+              "name": "Grow",
+              "nutrientRatio": {
+                "N": 2,
+                "P": 1,
+                "K": 2
+              },
+              "durationDays": 21
+            },
+            {
+              "name": "Micro",
+              "nutrientRatio": {
+                "N": 1,
+                "P": 2,
+                "K": 2
+              },
+              "durationDays": 7
+            },
+            {
+              "name": "Bloom",
+              "nutrientRatio": {
+                "N": 1,
+                "P": 1,
+                "K": 2
+              },
+              "durationDays": 7
+            }
+          ]
+        }
+      },
+      {
+        "name": "Basil",
+        "type": "Herb",
+        "environment": {
+          "temperature": {
+            "min": 15,
+            "max": 28
+          },
+          "pH": {
+            "min": 6.0,
+            "max": 7.0
+          },
+          "humidity": {
+            "min": 40,
+            "max": 60
+          },
+          "lightDuration": 12
+        },
+        "nutrients": {
+          "totalPPM": 1000,
+          "stages": [
+            {
+              "name": "Grow",
+              "nutrientRatio": {
+                "N": 3,
+                "P": 1,
+                "K": 2
+              },
+              "durationDays": 21
+            },
+            {
+              "name": "Micro",
+              "nutrientRatio": {
+                "N": 2,
+                "P": 1,
+                "K": 3
+              },
+              "durationDays": 7
+            },
+            {
+              "name": "Bloom",
+              "nutrientRatio": {
+                "N": 1,
+                "P": 2,
+                "K": 2
+              },
+              "durationDays": 7
+            }
+          ]
+        }
+      },
+      {
+        "name": "Kale",
+        "type": "Leafy Green",
+        "environment": {
+          "temperature": {
+            "min": 10,
+            "max": 25
+          },
+          "pH": {
+            "min": 5.5,
+            "max": 6.5
+          },
+          "humidity": {
+            "min": 50,
+            "max": 70
+          },
+          "lightDuration": 16
+        },
+        "nutrients": {
+          "totalPPM": 850,
+          "stages": [
+            {
+              "name": "Grow",
+              "nutrientRatio": {
+                "N": 2,
+                "P": 1,
+                "K": 2
+              },
+              "durationDays": 14
+            },
+            {
+              "name": "Micro",
+              "nutrientRatio": {
+                "N": 1,
+                "P": 2,
+                "K": 2
+              },
+              "durationDays": 7
+            },
+            {
+              "name": "Bloom",
+              "nutrientRatio": {
+                "N": 1,
+                "P": 2,
+                "K": 3
+              },
+              "durationDays": 7
+            }
+          ]
+        }
+      },
+      {
+        "name": "Cabbage",
+        "type": "Leafy Green",
+        "environment": {
+          "temperature": {
+            "min": 10,
+            "max": 24
+          },
+          "pH": {
+            "min": 6.0,
+            "max": 7.0
+          },
+          "humidity": {
+            "min": 50,
+            "max": 70
+          },
+          "lightDuration": 16
+        },
+        "nutrients": {
+          "totalPPM": 900,
+          "stages": [
+            {
+              "name": "Grow",
+              "nutrientRatio": {
+                "N": 2,
+                "P": 1,
+                "K": 2
+              },
+              "durationDays": 14
+            },
+            {
+              "name": "Micro",
+              "nutrientRatio": {
+                "N": 1,
+                "P": 2,
+                "K": 2
+              },
+              "durationDays": 7
+            },
+            {
+              "name": "Bloom",
+              "nutrientRatio": {
+                "N": 1,
+                "P": 2,
+                "K": 3
+              },
+              "durationDays": 7
+            }
+          ]
+        }
+      }
+    ]
+  }
+  
