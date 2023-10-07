@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Update Plant Parameters"
+            android:textColor="@color/green_accent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/tvName"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Lettuce"
+                android:background="@drawable/textview_border"
+                android:padding="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/tvType"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Leafy Green"
+                android:background="@drawable/textview_border"
+                android:padding="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/tvMinTemperature"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/green_accent"
+                android:hint="10(°C)"
+                android:background="@drawable/textview_border"
+                android:padding="16dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/tvMaxTemperature"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/green_accent"
+                android:background="@drawable/textview_border"
+                android:hint="24(°C)"
+                android:padding="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/tvMinPH"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="5.5 pH"
+                android:background="@drawable/textview_border"
+
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/tvMaxPH"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="6.5 pH"
+                android:background="@drawable/textview_border"
+
+                android:padding="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/tvLightDuration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Light Duration (hrs)"
+                android:background="@drawable/textview_border"
+                android:padding="16dp"/>
+
+            <TextView
+                android:id="@+id/tvNutrients"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Nutrients(ppm)"
+                android:background="@drawable/textview_border"
+                android:padding="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="50 RH(%RH)"
+                android:background="@drawable/textview_border"
+                android:padding="16dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="70 RH(%RH)"
+                android:background="@drawable/textview_border"
+                android:padding="16dp"/>
+        </LinearLayout>
+
+
+
+
+        <!-- Add more fields here as needed -->
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:text="Change Parameters"
+            android:textSize="19sp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
