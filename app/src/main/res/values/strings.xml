@@ -8,17 +8,18 @@
     <string name="live_status">Live Status</string>
 
 
-    <string-array name="vegetables">
+    <string-array name="crops">
         <item>Tomato</item>
         <item>Lettuce</item>
         <item>cucumber</item>
         <item>spinach</item>
     </string-array>
 
-    <string-array name="age">
-        <item>3 Month</item>
-        <item>5 Month</item>
-        <item>7 Month</item>
-        <item>9 Month</item>
+    <string-array name="stages">
+        <item>Seed</item>
+        <item>Germinating</item>
+        <item>Growing</item>
+        <item>Micropropagation</item>
+        <item>Blooming</item>
     </string-array>
 </resources>

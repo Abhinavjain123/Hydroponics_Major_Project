@@ -18,7 +18,7 @@ public class SelectCrop extends AppCompatActivity {
 
         addButton = (FloatingActionButton) findViewById(R.id.add_button);
         nextButton = (Button) findViewById(R.id.nextButton);
-        addButton.setOnClickListener(new View.OnClickListener() {
+        addButton.setOnClickListener(new View.OnClickListener() {   
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), AddCrop.class);

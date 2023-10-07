@@ -1,5 +1,6 @@
 package com.example.hydroponics_major_project;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -14,5 +15,9 @@ public class LiveStatus extends AppCompatActivity {
 
         TextView cropNameTextView = (TextView) findViewById(R.id.cropNameTextView);
         cropNameTextView.setText(cropName);
+
+        ThingspeakClient client = new ThingspeakClient();
+        AsyncTask<String, String, String> a = client.execute("https://api.thingspeak.com/channels/2080835/feeds.json?api_key=SPJO1DKYA6LX64QW&results=1");
+        System.out.println(a);
     }
 }

@@ -11,7 +11,6 @@ import java.net.URL;
 public class ThingspeakClient extends AsyncTask<String, String, String> {
     URL url = null;
     InputStream responseStream;
-
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
@@ -47,6 +46,6 @@ public class ThingspeakClient extends AsyncTask<String, String, String> {
     @Override
     protected void onPostExecute(String response) {
         super.onPostExecute(response);
-        System.out.println(response);
+//        System.out.println(response);
     }
 }
