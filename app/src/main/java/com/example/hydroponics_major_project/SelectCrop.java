@@ -29,7 +29,7 @@ public class SelectCrop extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), UpdateParameters.class);
+                Intent i = new Intent(getApplicationContext(), SetParameters.class);
                 startActivity(i);
             }
         });

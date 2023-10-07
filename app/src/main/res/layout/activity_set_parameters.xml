@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="16dp"
-            android:text="Update Plant Parameters"
+            android:text="Current Set Parameters"
             android:textColor="@color/green_accent"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -31,7 +31,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Lettuce"
-                android:background="@drawable/textview_border"
                 android:padding="16dp" />
 
             <TextView
@@ -144,13 +143,8 @@
                 android:padding="16dp"/>
         </LinearLayout>
 
-
-
-
-        <!-- Add more fields here as needed -->
-
-
         <Button
+            android:id="@+id/update_parameters"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
