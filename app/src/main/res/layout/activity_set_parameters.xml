@@ -8,7 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
@@ -23,58 +23,158 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="8dp">
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
 
             <TextView
                 android:layout_width="0dp"
-                android:id="@+id/tvName"
+                android:gravity="start"
+                android:text="Plant Name"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Lettuce"
-                android:padding="16dp" />
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                />
 
             <TextView
                 android:layout_width="0dp"
-                android:id="@+id/tvType"
+                android:gravity="start"
+                android:text="Plant Type"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Leafy Green"
-                android:background="@drawable/textview_border"
-                android:padding="16dp" />
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                />
 
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="8dp">
+            android:layout_marginLeft="10dp"
+           >
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:textSize="16sp"
+                android:hint="Lettuce"
+
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="0dp"
+                android:gravity="start"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Leafy Green"
+                android:textSize="16sp"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="Min Temp (c)"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="Max Temp (c)"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
 
             <TextView
                 android:layout_width="0dp"
                 android:id="@+id/tvMinTemperature"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="start"
+                android:textSize="16sp"
                 android:textColor="@color/green_accent"
                 android:hint="10(°C)"
-                android:background="@drawable/textview_border"
-                android:padding="16dp" />
+                android:padding="10dp" />
             <TextView
                 android:layout_width="0dp"
+                android:gravity="start"
+                android:textSize="16sp"
                 android:id="@+id/tvMaxTemperature"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textColor="@color/green_accent"
-                android:background="@drawable/textview_border"
                 android:hint="24(°C)"
-                android:padding="16dp" />
+                android:padding="10dp" />
         </LinearLayout>
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="8dp">
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="Min Ph"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="Max ph"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
 
             <TextView
                 android:id="@+id/tvMinPH"
@@ -82,71 +182,145 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="5.5 pH"
-                android:background="@drawable/textview_border"
-
-                android:padding="16dp" />
+                android:gravity="start"
+                android:textSize="16sp"
+                android:padding="10dp" />
 
             <TextView
                 android:id="@+id/tvMaxPH"
                 android:layout_width="0dp"
+                android:gravity="start"
+                android:textSize="16sp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="6.5 pH"
-                android:background="@drawable/textview_border"
+                android:padding="10dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
 
-                android:padding="16dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="Light Duration (hrs)"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="Nutrients(ppm)"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"                />
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="8dp">
+            android:layout_marginLeft="10dp"
+           >
 
             <TextView
                 android:id="@+id/tvLightDuration"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Light Duration (hrs)"
-                android:background="@drawable/textview_border"
-                android:padding="16dp"/>
+                android:gravity="start"
+                android:textSize="16sp"
+                android:hint="12 (hrs)"
+                android:padding="10dp"/>
 
             <TextView
                 android:id="@+id/tvNutrients"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Nutrients(ppm)"
-                android:background="@drawable/textview_border"
-                android:padding="16dp"/>
+                android:gravity="start"
+                android:textSize="16sp"
+                android:hint="1000(ppm)"
+                android:padding="10dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="Min RH(%RH)"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="Max RH(%RH)"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"                />
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="8dp">
+            android:layout_marginLeft="10dp"
+           >
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="50 RH(%RH)"
-                android:background="@drawable/textview_border"
-                android:padding="16dp"/>
+                android:textSize="16sp"
+                android:padding="10dp"/>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textSize="16sp"
                 android:hint="70 RH(%RH)"
-                android:background="@drawable/textview_border"
-                android:padding="16dp"/>
+                android:padding="10dp"/>
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+
 
         <Button
             android:id="@+id/update_parameters"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_gravity="center"
             android:paddingStart="24dp"
             android:paddingEnd="24dp"
