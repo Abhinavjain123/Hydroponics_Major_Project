@@ -4,13 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/Hydroponics_Major_Project/app/src/main/res/drawable/ic_add.xml" value="0.195" />
-        <entry key="..\:/Android/Hydroponics_Major_Project/app/src/main/res/layout/activity_add_crop.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android/Hydroponics_Major_Project/app/src/main/res/layout/activity_add_crop.xml" value="0.264" />
         <entry key="..\:/Android/Hydroponics_Major_Project/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Android/Hydroponics_Major_Project/app/src/main/res/layout/activity_scroll.xml" value="0.22826086956521738" />
-        <entry key="..\:/Android/Hydroponics_Major_Project/app/src/main/res/layout/activity_select_crop.xml" value="0.1" />
-        <entry key="..\:/Android/Hydroponics_Major_Project/app/src/main/res/layout/activity_set_parameters.xml" value="0.1" />
+        <entry key="..\:/Android/Hydroponics_Major_Project/app/src/main/res/layout/activity_select_crop.xml" value="0.176" />
+        <entry key="..\:/Android/Hydroponics_Major_Project/app/src/main/res/layout/activity_set_parameters.xml" value="0.536" />
         <entry key="..\:/Android/Hydroponics_Major_Project/app/src/main/res/layout/activity_update_parameters.xml" value="0.22826086956521738" />
         <entry key="..\:/Android/Hydroponics_Major_Project/app/src/main/res/layout/crop_live_statue.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android/Hydroponics_Major_Project/app/src/main/res/layout/dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android/Hydroponics_Major_Project/app/src/main/res/layout/plant.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

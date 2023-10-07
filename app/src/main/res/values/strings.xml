@@ -5,7 +5,30 @@
     <string name="next_button">Next</string>
     <string name="hydroponic_system">Hydroponic System</string>
     <string name="choose_crop">Choose Crop</string>
+    <string name="select_crop">Select Crop</string>
+    <string name="select_stage">Select Plant Stage</string>
     <string name="live_status">Live Status</string>
+    <string name="plant_name">Plant Name</string>
+    <string name="plant_type">Plant Type</string>
+    <string name="min_temp">Min Temp (°C)</string>
+    <string name="max_temp">Max Temp (°C)</string>
+    <string name="min_ph">Min pH</string>
+    <string name="max_ph">Max pH</string>
+    <string name="min_rh">Min RH(%RH)</string>
+    <string name="max_rh">Max RH(%RH)</string>
+    <string name="light_duration">Light Duration (hrs)</string>
+    <string name="nutrients">Nutrients (ppm)</string>
+    <string name="submit">Submit</string>
+    <string name="update_parameters">Update Plant Parameters</string>
+    <string name="current_status">Current Status</string>
+    <string name="current_temp">Current Temp</string>
+    <string name="current_ph">Current pH</string>
+    <string name="current_rh">Current RH</string>
+    <string name="light_status">Light Status</string>
+    <string name="nutrient_content">Nutrient Content</string>
+    <string name="update">Update</string>
+    <string name="back">Back</string>
+    <string name="change_parameters">Change Parameters</string>
 
 
     <string-array name="crops">

@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="16dp"
-            android:text="Current status"
+            android:text="@string/current_status"
             android:textColor="@color/green_accent"
             android:textSize="28sp"
             android:textStyle="bold" />
@@ -42,7 +42,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
-                android:text="Current Temp"
+                android:text="@string/current_temp"
                 android:textColor="@color/green_accent"
                 android:textSize="20sp"
                 android:layout_weight="1"
@@ -67,7 +67,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
-                android:text="Current pH"
+                android:text="@string/current_ph"
                 android:layout_weight="1"
                 android:textColor="@color/green_accent"
                 android:textSize="20sp"
@@ -92,7 +92,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
-                android:text="Current RH"
+                android:text="@string/current_rh"
                 android:textColor="@color/green_accent"
                 android:textSize="20sp"
                 android:layout_weight="1"
@@ -117,7 +117,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
-                android:text="Light Status"
+                android:text="@string/light_status"
                 android:textColor="@color/green_accent"
                 android:textSize="20sp"
                 android:layout_weight="1"
@@ -142,7 +142,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
-                android:text="Nutrient Content"
+                android:text="@string/nutrient_content"
                 android:textColor="@color/green_accent"
                 android:textSize="20sp"
                 android:layout_weight="1"
@@ -157,12 +157,13 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/live_status_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:paddingStart="24dp"
             android:paddingEnd="24dp"
-            android:text="Back"
+            android:text="@string/back"
             android:textSize="19sp" />
     </LinearLayout>
 
