@@ -29,6 +29,7 @@
     <string name="update">Update</string>
     <string name="back">Back</string>
     <string name="change_parameters">Change Parameters</string>
+    <string name="water_level">Water Level</string>
 
 
     <string-array name="crops">
