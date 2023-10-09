@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
@@ -24,96 +24,102 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="8dp">
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
 
             <EditText
+                android:id="@+id/minTemp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="@string/min_temp"
-                android:inputType="numberDecimal"
+                android:inputType="textPersonName"
                 android:padding="16dp" />
 
             <EditText
+                android:id="@+id/maxTemp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="@string/max_temp"
-                android:inputType="numberDecimal"
+                android:inputType="textPersonName"
                 android:padding="16dp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="8dp">
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
 
             <EditText
+                android:id="@+id/minPh"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="@string/min_ph"
-                android:inputType="numberDecimal"
+                android:inputType="textPersonName"
                 android:padding="16dp" />
 
             <EditText
+                android:id="@+id/maxPh"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="@string/max_ph"
-                android:inputType="numberDecimal"
-                android:padding="16dp"/>
+                android:inputType="textPersonName"
+                android:padding="16dp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="8dp">
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
 
             <EditText
+                android:id="@+id/minRh"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="@string/min_rh"
-                android:inputType="numberDecimal"
-                android:padding="16dp"/>
+                android:inputType="textPersonName"
+                android:padding="16dp" />
 
             <EditText
+                android:id="@+id/maxRh"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="@string/max_rh"
-                android:inputType="numberDecimal"
-                android:padding="16dp"/>
+                android:inputType="textPersonName"
+                android:padding="16dp" />
         </LinearLayout>
 
         <EditText
+            android:id="@+id/lightDuration"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:hint="@string/light_duration"
-            android:inputType="number"
-            android:padding="16dp"
-            android:layout_margin="8dp"/>
+            android:inputType="textPersonName"
+            android:padding="16dp" />
 
         <!-- Add more fields here as needed -->
         <EditText
+            android:id="@+id/nutrients"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:hint="@string/nutrients"
-            android:inputType="number"
-            android:padding="16dp"
-            android:layout_margin="8dp"/>
+            android:inputType="textPersonName"
+            android:padding="16dp" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/update"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingStart="24dp"
-            android:paddingEnd="24dp"
-            android:text="@string/update"
-            android:textSize="19sp"/>
+            android:text="UPDATE" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
