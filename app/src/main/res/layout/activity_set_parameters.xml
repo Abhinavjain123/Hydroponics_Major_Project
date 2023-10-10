@@ -120,7 +120,7 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:id="@+id/tvMinTemperature"
+                android:id="@+id/minTemp1"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="start"
@@ -132,7 +132,7 @@
                 android:layout_width="0dp"
                 android:gravity="start"
                 android:textSize="16sp"
-                android:id="@+id/tvMaxTemperature"
+                android:id="@+id/maxTemp1"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textColor="@color/green_accent"
@@ -177,7 +177,7 @@
             >
 
             <TextView
-                android:id="@+id/tvMinPH"
+                android:id="@+id/minPh1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -187,7 +187,7 @@
                 android:padding="10dp" />
 
             <TextView
-                android:id="@+id/tvMaxPH"
+                android:id="@+id/maxPh1"
                 android:layout_width="0dp"
                 android:gravity="start"
                 android:textSize="16sp"
@@ -235,14 +235,14 @@
            >
 
             <TextView
-                android:id="@+id/tvLightDuration"
+                android:id="@+id/lightDuration1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="start"
-                android:textSize="16sp"
                 android:hint="12 (hrs)"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/tvNutrients"
@@ -293,20 +293,22 @@
            >
 
             <TextView
+                android:id="@+id/minRh1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="50 RH(%RH)"
-                android:textSize="16sp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/maxRh1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="16sp"
                 android:hint="70 RH(%RH)"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <View
