@@ -1,5 +1,6 @@
 package com.example.hydroponics_major_project;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -72,7 +73,8 @@ public class UpdateParameters extends AppCompatActivity {
                  minRh.setValue(rh2);
                  lightDuration.setValue(light);
                  nutrients.setValue(nutrie);
-
+                Intent i = new Intent(getApplicationContext(), SetParameters.class);
+                startActivity(i);
             }
         });
     }
