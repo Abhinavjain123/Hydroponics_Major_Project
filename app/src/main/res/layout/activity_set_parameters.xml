@@ -17,7 +17,7 @@
             android:padding="16dp"
             android:text="Current Set Parameters"
             android:textColor="@color/green_accent"
-            android:textSize="20sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,7 +33,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp"
-                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textSize="20sp"
                 />
 
             <TextView
@@ -43,7 +44,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp"
-                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textSize="20sp"
                 />
 
         </LinearLayout>
@@ -62,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="start"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:hint="Lettuce"
 
                 android:padding="10dp" />
@@ -75,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Leafy Green"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:padding="10dp" />
 
         </LinearLayout>
@@ -99,7 +101,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp"
-                android:textSize="16sp"/>
+                android:textStyle="bold"
+
+                android:textSize="20sp"/>
 
             <TextView
                 android:layout_width="0dp"
@@ -107,8 +111,10 @@
                 android:text="@string/max_temp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textStyle="bold"
+
                 android:layout_marginLeft="10dp"
-                android:textSize="16sp"                />
+                android:textSize="20sp"          />
 
         </LinearLayout>
         <LinearLayout
@@ -124,18 +130,18 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="start"
-                android:textSize="16sp"
-                android:textColor="@color/green_accent"
+                android:textSize="20sp"
+
                 android:hint="10(°C)"
                 android:padding="10dp" />
             <TextView
                 android:layout_width="0dp"
                 android:gravity="start"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:id="@+id/maxTemp1"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textColor="@color/green_accent"
+
                 android:hint="24(°C)"
                 android:padding="10dp" />
         </LinearLayout>
@@ -156,8 +162,10 @@
                 android:text="@string/min_ph"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textStyle="bold"
+
                 android:layout_marginLeft="10dp"
-                android:textSize="16sp"                />
+                android:textSize="20sp"            />
 
             <TextView
                 android:layout_width="0dp"
@@ -166,7 +174,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp"
-                android:textSize="16sp"                />
+                android:textStyle="bold"
+
+                android:textSize="20sp"              />
 
         </LinearLayout>
         <LinearLayout
@@ -183,14 +193,14 @@
                 android:layout_weight="1"
                 android:hint="5.5 pH"
                 android:gravity="start"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:padding="10dp" />
 
             <TextView
                 android:id="@+id/maxPh1"
                 android:layout_width="0dp"
                 android:gravity="start"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="6.5 pH"
@@ -205,7 +215,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            >
 
             <TextView
                 android:layout_width="0dp"
@@ -214,7 +225,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp"
-                android:textSize="16sp"                />
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
 
             <TextView
                 android:layout_width="0dp"
@@ -222,9 +235,10 @@
                 android:text="@string/nutrients"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textStyle="bold"
 
                 android:layout_marginLeft="10dp"
-                android:textSize="16sp"                />
+                android:textSize="20sp"             />
 
         </LinearLayout>
         <LinearLayout
@@ -242,7 +256,7 @@
                 android:gravity="start"
                 android:hint="12 (hrs)"
                 android:padding="10dp"
-                android:textSize="16sp" />
+                android:textSize="20sp"/>
 
             <TextView
                 android:id="@+id/tvNutrients"
@@ -250,7 +264,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="start"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:hint="1000(ppm)"
                 android:padding="10dp"/>
         </LinearLayout>
@@ -271,8 +285,10 @@
                 android:text="@string/min_rh"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textStyle="bold"
+
                 android:layout_marginLeft="10dp"
-                android:textSize="16sp"                />
+                android:textSize="20sp"              />
 
             <TextView
                 android:layout_width="0dp"
@@ -280,9 +296,10 @@
                 android:text="@string/max_rh"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textStyle="bold"
 
                 android:layout_marginLeft="10dp"
-                android:textSize="16sp"                />
+                android:textSize="20sp"         />
 
         </LinearLayout>
         <LinearLayout
@@ -299,7 +316,7 @@
                 android:layout_weight="1"
                 android:hint="50 RH(%RH)"
                 android:padding="10dp"
-                android:textSize="16sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/maxRh1"
@@ -308,7 +325,7 @@
                 android:layout_weight="1"
                 android:hint="70 RH(%RH)"
                 android:padding="10dp"
-                android:textSize="16sp" />
+                android:textSize="20sp" />
         </LinearLayout>
 
         <View
