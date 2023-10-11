@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import java.text.DecimalFormat;
 
 
 import androidx.annotation.NonNull;
@@ -16,6 +17,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import java.text.DecimalFormat;
 
 public class UpdateParameters extends AppCompatActivity {
     private DatabaseReference minTemp;
@@ -40,6 +43,8 @@ public class UpdateParameters extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_parameters);
+        DecimalFormat df = new DecimalFormat("0.00");
+        df.setMaximumFractionDigits(2);
         textMaxTemp=findViewById(R.id.maxTemp);
         textMinTemp=findViewById(R.id.minTemp);
         textMaxPh=findViewById(R.id.maxPh);
@@ -63,7 +68,7 @@ public class UpdateParameters extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists())
                 {
-                    String data=snapshot.getValue().toString();
+                    String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
                     textMaxTemp.setText(data);
                 }
             }
@@ -78,7 +83,7 @@ public class UpdateParameters extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists())
                 {
-                    String data=snapshot.getValue().toString();
+                    String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
                     textMinTemp.setText(data);
                 }
             }
@@ -93,7 +98,7 @@ public class UpdateParameters extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists())
                 {
-                    String data=snapshot.getValue().toString();
+                    String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
                     textMaxPh.setText(data);
                 }
             }
@@ -108,7 +113,7 @@ public class UpdateParameters extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists())
                 {
-                    String data=snapshot.getValue().toString();
+                    String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
                     textMinPh.setText(data);
                 }
             }
@@ -123,7 +128,7 @@ public class UpdateParameters extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists())
                 {
-                    String data=snapshot.getValue().toString();
+                    String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
                     textMaxRh.setText(data);
                 }
             }
@@ -138,7 +143,7 @@ public class UpdateParameters extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists())
                 {
-                    String data=snapshot.getValue().toString();
+                    String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
                     textMinRh.setText(data);
                 }
             }
@@ -153,7 +158,7 @@ public class UpdateParameters extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists())
                 {
-                    String data=snapshot.getValue().toString();
+                    String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
                     textLightDuration.setText(data);
                 }
             }
@@ -168,7 +173,7 @@ public class UpdateParameters extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists())
                 {
-                    String data=snapshot.getValue().toString();
+                    String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
                     textNutrients.setText(data);
                 }
             }
