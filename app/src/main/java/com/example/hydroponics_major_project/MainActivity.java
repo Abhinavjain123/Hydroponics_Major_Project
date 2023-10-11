@@ -6,11 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button homeButton, liveButton, currentButton;
+    Button homeButton, liveButton, currentButton, loginButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         homeButton = (Button) findViewById(R.id.homeButton);
         liveButton = (Button) findViewById(R.id.liveButton);
+        loginButton = (Button) findViewById(R.id.loginButton);
 //        currentButton=(Button) findViewById(R.id.button);
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +31,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), LiveStatus.class);
+                startActivity(i);
+            }
+        });
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), Login.class);
                 startActivity(i);
             }
         });

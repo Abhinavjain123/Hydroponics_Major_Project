@@ -17,7 +17,7 @@
 
     android:gravity="center"
 
-    tools:context=".register">
+    tools:context=".Register">
 
 
     <TextView
