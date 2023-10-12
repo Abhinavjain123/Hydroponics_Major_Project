@@ -10,8 +10,15 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Register extends AppCompatActivity {
 
+    private DatabaseReference fullName;
+    private DatabaseReference userName;
+    private DatabaseReference email;
+    private DatabaseReference passwd;
     EditText registration_fullname;
     EditText registration_username;
 
@@ -32,18 +39,30 @@ public class Register extends AppCompatActivity {
         registration_password = findViewById(R.id.registration_password);
         registerButton= findViewById(R.id.registerButton);
         loginRedirectText = findViewById(R.id.loginRedirectText);
+        fullName= FirebaseDatabase.getInstance().getReference("User").child("name");
+        userName= FirebaseDatabase.getInstance().getReference("User").child("userName");
+        email= FirebaseDatabase.getInstance().getReference("User").child("email");
+        passwd= FirebaseDatabase.getInstance().getReference("User").child("password");
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String fullName = registration_fullname.getText().toString();
-                String username = registration_username.getText().toString();
-                String email = registration_email.getText().toString();
-                String password = registration_password.getText().toString();
+                String fullName1 = registration_fullname.getText().toString();
+                String username1 = registration_username.getText().toString();
+                String email1 = registration_email.getText().toString();
+                String password1 = registration_password.getText().toString();
 
-                if (isValidRegistration(fullName, username, email, password)) {
+
+
+                if (isValidRegistration(fullName1, username1, email1, password1)) {
+                    fullName.setValue(fullName1);
+                    userName.setValue(username1);
+                    email.setValue(email1);
+                    passwd.setValue(password1);
 
                     Toast.makeText(Register.this, "Registration Successful!", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(getApplicationContext(), Login.class);
+                    startActivity(i);
                 } else {
                     Toast.makeText(Register.this, "Registration Failed! Please check your input.", Toast.LENGTH_SHORT).show();
                 }
