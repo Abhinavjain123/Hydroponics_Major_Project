@@ -13,35 +13,40 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        homeButton = (Button) findViewById(R.id.homeButton);
-        liveButton = (Button) findViewById(R.id.liveButton);
-        loginButton = (Button) findViewById(R.id.loginButton);
 //        currentButton=(Button) findViewById(R.id.button);
-        homeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), SelectCrop.class);
-                startActivity(i);
-            }
-        });
 
-        liveButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), LiveStatus.class);
-                startActivity(i);
-            }
-        });
+            setContentView(R.layout.activity_main);
+            homeButton = (Button) findViewById(R.id.homeButton);
+            liveButton = (Button) findViewById(R.id.liveButton);
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), Login.class);
-                startActivity(i);
-            }
-        });
+            homeButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(getApplicationContext(), SelectCrop.class);
+                    startActivity(i);
+                }
+            });
+
+            liveButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(getApplicationContext(), LiveStatus.class);
+                    startActivity(i);
+                }
+            });
+
+
+
+
+//            loginButton = (Button) findViewById(R.id.loginButton);
+//          loginButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//          public void onClick(View view) {
+//            Intent i = new Intent(getApplicationContext(), Login.class);
+//        startActivity(i);
+//      }
+// });
 
 //        currentButton.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -50,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
 //                startActivity(i);
 //            }
 //        });
+
         ThingspeakClient client = new ThingspeakClient();
         client.execute("https://api.thingspeak.com/channels/2080835/feeds.json?api_key=SPJO1DKYA6LX64QW&results=3");
     }
