@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Hydroponic App</string>
     <string name="app_description">Monitor and control your hydroponic system with ease.</string>
+    <string name="app_description2">Grow your greens without the soil, just a touch away</string>
     <string name="start_button">Start</string>
     <string name="next_button">Next</string>
     <string name="hydroponic_system">Hydroponic System</string>
@@ -30,6 +31,13 @@
     <string name="back">Back</string>
     <string name="change_parameters">Change Parameters</string>
     <string name="water_level">Water Level</string>
+    <string name="wifi_details">Wifi Details</string>
+    <string name="wifi_name">Wifi Name</string>
+    <string name="wifi_pass">Wifi Password</string>
+    <string name="enter">Enter</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="welcome">Welcome!</string>
 
 
     <string-array name="crops">

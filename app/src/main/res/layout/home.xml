@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="8dp"
-        android:text="Welcome!"
+        android:text="@string/welcome"
         android:textSize="37sp"
         android:textAlignment="center"
         android:textColor="@color/green_button_background"
@@ -73,10 +73,9 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="17dp"
-                android:layout_alignParentTop="false"
                 android:layout_gravity="center_horizontal"
                 android:fontFamily="sans-serif-medium"
-                android:text="Grow your greens without the soil, just a touch away"
+                android:text="@string/app_description2"
                 android:textColor="@color/green_button_background"
                 android:textSize="25sp" />
 
@@ -88,7 +87,7 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="25dp"
                 android:backgroundTint="@color/green_theme_background"
-                android:text="Login"
+                android:text="@string/login"
                 android:textSize="18sp"
                 app:cornerRadius="20dp" />
 
@@ -100,7 +99,7 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="25dp"
                 android:backgroundTint="@color/green_theme_background"
-                android:text="Register"
+                android:text="@string/register"
                 android:textSize="18sp"
                 app:cornerRadius="20dp" />
 
