@@ -126,7 +126,7 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:id="@+id/minTemp1"
+                android:id="@+id/minTemp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="start"
@@ -138,7 +138,7 @@
                 android:layout_width="0dp"
                 android:gravity="start"
                 android:textSize="20sp"
-                android:id="@+id/maxTemp1"
+                android:id="@+id/maxTemp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
 
@@ -187,7 +187,7 @@
             >
 
             <TextView
-                android:id="@+id/minPh1"
+                android:id="@+id/minPh"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -197,7 +197,7 @@
                 android:padding="10dp" />
 
             <TextView
-                android:id="@+id/maxPh1"
+                android:id="@+id/maxPh"
                 android:layout_width="0dp"
                 android:gravity="start"
                 android:textSize="20sp"
@@ -249,7 +249,7 @@
            >
 
             <TextView
-                android:id="@+id/lightDuration1"
+                android:id="@+id/lightDuration"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -259,7 +259,7 @@
                 android:textSize="20sp"/>
 
             <TextView
-                android:id="@+id/tvNutrients"
+                android:id="@+id/nutrients"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -310,7 +310,7 @@
            >
 
             <TextView
-                android:id="@+id/minRh1"
+                android:id="@+id/minRh"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -319,7 +319,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/maxRh1"
+                android:id="@+id/maxRh"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

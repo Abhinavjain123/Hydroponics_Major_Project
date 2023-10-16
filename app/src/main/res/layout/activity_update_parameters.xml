@@ -11,109 +11,281 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="16dp"
-            android:text="@string/update_parameters"
+            android:text="Update Parameters"
             android:textColor="@color/green_accent"
-            android:textSize="20sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
 
             <EditText
-                android:id="@+id/minTemp"
                 android:layout_width="0dp"
+                android:gravity="start"
+                android:text="@string/min_temp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/min_temp"
-                android:inputType="textPersonName"
-                android:padding="16dp" />
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+
+                android:textSize="20sp"/>
 
             <EditText
-                android:id="@+id/maxTemp"
                 android:layout_width="0dp"
+                android:gravity="start"
+                android:text="@string/max_temp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/max_temp"
-                android:inputType="textPersonName"
-                android:padding="16dp" />
+                android:textStyle="bold"
+
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"          />
+
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+
+            <EditText
+                android:layout_width="0dp"
+                android:id="@+id/minTemp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:textSize="20sp"
+
+                android:hint="10(°C)"
+                android:padding="10dp" />
+            <EditText
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:textSize="20sp"
+                android:id="@+id/maxTemp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:hint="24(°C)"
+                android:padding="10dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="@string/min_ph"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"            />
+
+            <EditText
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="@string/max_ph"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+
+                android:textSize="20sp"              />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
 
             <EditText
                 android:id="@+id/minPh"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/min_ph"
-                android:inputType="textPersonName"
-                android:padding="16dp" />
+                android:hint="5.5 pH"
+                android:gravity="start"
+                android:textSize="20sp"
+                android:padding="10dp" />
 
             <EditText
                 android:id="@+id/maxPh"
                 android:layout_width="0dp"
+                android:gravity="start"
+                android:textSize="20sp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/max_ph"
-                android:inputType="textPersonName"
-                android:padding="16dp" />
+                android:hint="6.5 pH"
+                android:padding="10dp"/>
         </LinearLayout>
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <EditText
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="@string/light_duration"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="@string/nutrients"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"             />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+
+            <EditText
+                android:id="@+id/lightDuration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:hint="12 (hrs)"
+                android:padding="10dp"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/nutrients"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:textSize="20sp"
+                android:hint="1000(ppm)"
+                android:padding="10dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="@string/min_rh"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"              />
+
+            <EditText
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="@string/max_rh"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"         />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
 
             <EditText
                 android:id="@+id/minRh"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/min_rh"
-                android:inputType="textPersonName"
-                android:padding="16dp" />
+                android:hint="50 RH(%RH)"
+                android:padding="10dp"
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/maxRh"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/max_rh"
-                android:inputType="textPersonName"
-                android:padding="16dp" />
+                android:hint="70 RH(%RH)"
+                android:padding="10dp"
+                android:textSize="20sp" />
         </LinearLayout>
 
-        <EditText
-            android:id="@+id/lightDuration"
+        <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:hint="@string/light_duration"
-            android:inputType="textPersonName"
-            android:padding="16dp" />
-
-        <!-- Add more fields here as needed -->
-        <EditText
-            android:id="@+id/nutrients"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:hint="@string/nutrients"
-            android:inputType="textPersonName"
-            android:padding="16dp" />
+            android:layout_height="1dp"
+            android:background="#000000" />
 
         <Button
             android:id="@+id/update"
@@ -123,3 +295,4 @@
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
