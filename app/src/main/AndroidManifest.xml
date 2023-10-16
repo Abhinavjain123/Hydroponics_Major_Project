@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" >
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -20,6 +25,12 @@
             android:name=".ScrollActivity"
             android:exported="false" />
         <activity
+            android:name=".BluetoothClient"
+            android:exported="false" />
+        <activity
+            android:name=".BluetoothHandler"
+            android:exported="false" />
+        <activity
             android:name=".UpdateParameters"
             android:exported="false" />
         <activity
@@ -28,7 +39,7 @@
         <activity
             android:name=".SelectCrop"
             android:exported="false" />
-        <activity
+        <activity 
             android:name=".LiveStatus"
             android:exported="false" />
         <activity
