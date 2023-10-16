@@ -13,34 +13,34 @@ import android.widget.Button;
 public class Home extends AppCompatActivity {
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.home);
 
         Button home_loginButton = findViewById(R.id.home_loginButton);
-
         Button home_registerButton = findViewById(R.id.home_registerButton);
+        Button wifiButton = findViewById(R.id.wifiButton);
 
         home_loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent = new Intent(Home.this, Login.class);
+                Intent intent = new Intent(getApplicationContext(), Login.class);
                 startActivity(intent);
             }
-
         });
         home_registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent = new Intent(Home.this, Register.class);
+                Intent intent = new Intent(getApplicationContext(), Register.class);
                 startActivity(intent);
             }
-
+        });
+        wifiButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), BluetoothHandler.class);
+                startActivity(intent);
+            }
         });
     }
 }
