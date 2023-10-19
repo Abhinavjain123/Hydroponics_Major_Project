@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "388676305115",
+    "firebase_url": "https://hydroponics-72a5d-default-rtdb.firebaseio.com",
+    "project_id": "hydroponics-72a5d",
+    "storage_bucket": "hydroponics-72a5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388676305115:android:fda40df8b937d9184d8cfe",
+        "android_client_info": {
+          "package_name": "com.example.hydroponics_major_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-KIuGSiTdOj-J9lgMX0bj6E6qu10Y1hY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

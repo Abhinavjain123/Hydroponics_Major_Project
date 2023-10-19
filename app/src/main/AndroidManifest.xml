@@ -25,12 +25,6 @@
             android:name=".ScrollActivity"
             android:exported="false" />
         <activity
-            android:name=".BluetoothClient"
-            android:exported="false" />
-        <activity
-            android:name=".BluetoothHandler"
-            android:exported="false" />
-        <activity
             android:name=".UpdateParameters"
             android:exported="false" />
         <activity

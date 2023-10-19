@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import java.text.DecimalFormat;
 
 
@@ -18,17 +17,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.text.DecimalFormat;
-
 public class UpdateParameters extends AppCompatActivity {
     private DatabaseReference minTemp;
     private DatabaseReference maxTemp;
     private DatabaseReference minPh;
     private DatabaseReference maxPh;
-    private DatabaseReference minRh;
-    private DatabaseReference maxRh;
+    private DatabaseReference minNutrient;
+    private DatabaseReference maxNutrient;
     private DatabaseReference lightDuration;
-    private DatabaseReference nutrients;
+//    private DatabaseReference nutrients;
     private EditText textMinTemp;
     private EditText textMaxTemp;
     private EditText textMinPh;
@@ -36,7 +33,7 @@ public class UpdateParameters extends AppCompatActivity {
     private EditText textMinRh;
     private EditText textMaxRh;
     private EditText textLightDuration;
-    private EditText textNutrients;
+//    private EditText textNutrients;
     private Button update;
 
     @Override
@@ -49,19 +46,19 @@ public class UpdateParameters extends AppCompatActivity {
         textMinTemp=findViewById(R.id.minTemp);
         textMaxPh=findViewById(R.id.maxPh);
         textMinPh=findViewById(R.id.minPh);
-        textMaxRh=findViewById(R.id.maxRh);
-        textMinRh=findViewById(R.id.minRh);
+        textMaxRh=findViewById(R.id.maxNutrient);
+        textMinRh=findViewById(R.id.minNutrient);
         textLightDuration=findViewById(R.id.lightDuration);
-        textNutrients=findViewById(R.id.nutrients);
+//        textNutrients=findViewById(R.id.nutrients);
         update=findViewById(R.id.update);
         maxTemp= FirebaseDatabase.getInstance().getReference("Puneet").child("maxTemp");
         minTemp= FirebaseDatabase.getInstance().getReference("Puneet").child("minTemp");
         maxPh= FirebaseDatabase.getInstance().getReference("Puneet").child("maxPh");
         minPh= FirebaseDatabase.getInstance().getReference("Puneet").child("minPh");
-        maxRh= FirebaseDatabase.getInstance().getReference("Puneet").child("maxRh");
-        minRh= FirebaseDatabase.getInstance().getReference("Puneet").child("minRh");
+        maxNutrient= FirebaseDatabase.getInstance().getReference("Puneet").child("maxNutrient");
+        minNutrient= FirebaseDatabase.getInstance().getReference("Puneet").child("minNutrient");
         lightDuration= FirebaseDatabase.getInstance().getReference("Puneet").child("lightDuration");
-        nutrients= FirebaseDatabase.getInstance().getReference("Puneet").child("nutrients");
+//        nutrients= FirebaseDatabase.getInstance().getReference("Puneet").child("nutrients");
 //
         maxTemp.addValueEventListener(new ValueEventListener() {
             @Override
@@ -123,7 +120,7 @@ public class UpdateParameters extends AppCompatActivity {
 
             }
         });
-        maxRh.addValueEventListener(new ValueEventListener() {
+        maxNutrient.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists())
@@ -138,7 +135,7 @@ public class UpdateParameters extends AppCompatActivity {
 
             }
         });
-        minRh.addValueEventListener(new ValueEventListener() {
+        minNutrient.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists())
@@ -168,21 +165,21 @@ public class UpdateParameters extends AppCompatActivity {
 
             }
         });
-        nutrients.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.exists())
-                {
-                    String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
-                    textNutrients.setText(data);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
+//        nutrients.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                if(snapshot.exists())
+//                {
+//                    String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
+//                    textNutrients.setText(data);
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -193,15 +190,15 @@ public class UpdateParameters extends AppCompatActivity {
                 Float rh1=Float.parseFloat(textMaxRh.getText().toString());
                 Float rh2=Float.parseFloat(textMinRh.getText().toString());
                 Float light=Float.parseFloat(textLightDuration.getText().toString());
-                Float nutrie=Float.parseFloat(textNutrients.getText().toString());
+//                Float nutrie=Float.parseFloat(textNutrients.getText().toString());
                  maxTemp.setValue(Temp1);
                  minTemp.setValue(Temp2);
                  maxPh.setValue(ph1);
                  minPh.setValue(ph2);
-                 maxRh.setValue(rh1);
-                 minRh.setValue(rh2);
+                 maxNutrient.setValue(rh1);
+                 minNutrient.setValue(rh2);
                  lightDuration.setValue(light);
-                 nutrients.setValue(nutrie);
+//                 nutrients.setValue(nutrie);
                 Intent i = new Intent(getApplicationContext(), SetParameters.class);
                 startActivity(i);
             }
