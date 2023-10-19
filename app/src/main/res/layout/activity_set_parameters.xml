@@ -206,6 +206,66 @@
                 android:hint="6.5 pH"
                 android:padding="10dp"/>
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="@string/min_nutrient"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"              />
+
+            <TextView
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="@string/max_nutrient"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"         />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+           >
+
+            <TextView
+                android:id="@+id/minRh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="500ppm"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/maxRh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="1000ppm"
+                android:padding="10dp"
+                android:textSize="20sp" />
+        </LinearLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -229,24 +289,13 @@
                 android:textStyle="bold"
                 />
 
-            <TextView
-                android:layout_width="0dp"
-                android:gravity="start"
-                android:text="@string/nutrients"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textStyle="bold"
-
-                android:layout_marginLeft="10dp"
-                android:textSize="20sp"             />
-
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="10dp"
-           >
+            >
 
             <TextView
                 android:id="@+id/lightDuration"
@@ -257,83 +306,12 @@
                 android:hint="12 (hrs)"
                 android:padding="10dp"
                 android:textSize="20sp"/>
-
-            <TextView
-                android:id="@+id/nutrients"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="start"
-                android:textSize="20sp"
-                android:hint="1000(ppm)"
-                android:padding="10dp"/>
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp">
-
-            <TextView
-                android:layout_width="0dp"
-                android:gravity="start"
-                android:text="@string/min_rh"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textStyle="bold"
-
-                android:layout_marginLeft="10dp"
-                android:textSize="20sp"              />
-
-            <TextView
-                android:layout_width="0dp"
-                android:gravity="start"
-                android:text="@string/max_rh"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textStyle="bold"
-
-                android:layout_marginLeft="10dp"
-                android:textSize="20sp"         />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="10dp"
-           >
-
-            <TextView
-                android:id="@+id/minRh"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="50 RH(%RH)"
-                android:padding="10dp"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/maxRh"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="70 RH(%RH)"
-                android:padding="10dp"
-                android:textSize="20sp" />
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="#000000" />
-
-
 
         <Button
             android:id="@+id/update_parameters"

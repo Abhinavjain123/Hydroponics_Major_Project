@@ -21,10 +21,10 @@ public class SetParameters extends AppCompatActivity{
     private DatabaseReference maxTemp;
     private DatabaseReference minPh;
     private DatabaseReference maxPh;
-    private DatabaseReference minRh;
-    private DatabaseReference maxRh;
+    private DatabaseReference minNutrient;
+    private DatabaseReference maxNutrient;
     private DatabaseReference lightDuration;
-    private DatabaseReference nutrients;
+//    private DatabaseReference nutrients;
     private TextView textMinTemp;
     private TextView textMaxTemp;
     private TextView textMinPh;
@@ -32,7 +32,7 @@ public class SetParameters extends AppCompatActivity{
     private TextView textMinRh;
     private TextView textMaxRh;
     private TextView textLightDuration;
-    private TextView textNutrients;
+//    private TextView textNutrients;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,15 +46,15 @@ public class SetParameters extends AppCompatActivity{
         textMaxRh=findViewById(R.id.maxRh);
         textMinRh=findViewById(R.id.minRh);
         textLightDuration=findViewById(R.id.lightDuration);
-        textNutrients=findViewById(R.id.nutrients);
+//        textNutrients=findViewById(R.id.nutrients);
         maxTemp= FirebaseDatabase.getInstance().getReference("Puneet").child("maxTemp");
         minTemp= FirebaseDatabase.getInstance().getReference("Puneet").child("minTemp");
         maxPh= FirebaseDatabase.getInstance().getReference("Puneet").child("maxPh");
         minPh= FirebaseDatabase.getInstance().getReference("Puneet").child("minPh");
-        maxRh= FirebaseDatabase.getInstance().getReference("Puneet").child("maxRh");
-        minRh= FirebaseDatabase.getInstance().getReference("Puneet").child("minRh");
+        maxNutrient= FirebaseDatabase.getInstance().getReference("Puneet").child("maxNutrient");
+        minNutrient= FirebaseDatabase.getInstance().getReference("Puneet").child("minNutrient");
         lightDuration= FirebaseDatabase.getInstance().getReference("Puneet").child("lightDuration");
-        nutrients= FirebaseDatabase.getInstance().getReference("Puneet").child("nutrients");
+//        nutrients= FirebaseDatabase.getInstance().getReference("Puneet").child("nutrients");
         maxTemp.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -118,7 +118,7 @@ public class SetParameters extends AppCompatActivity{
             }
         });
 
-        maxRh.addValueEventListener(new ValueEventListener() {
+        maxNutrient.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists())
@@ -134,7 +134,7 @@ public class SetParameters extends AppCompatActivity{
             }
         });
 
-        minRh.addValueEventListener(new ValueEventListener() {
+        minNutrient.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists())
@@ -166,21 +166,21 @@ public class SetParameters extends AppCompatActivity{
             }
         });
 
-        nutrients.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.exists())
-                {
-                    String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
-                    textNutrients.setText(data);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
+//        nutrients.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                if(snapshot.exists())
+//                {
+//                    String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
+//                    textNutrients.setText(data);
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
 
         Button updateButton = (Button) findViewById(R.id.update_parameters);
         updateButton.setOnClickListener(new View.OnClickListener() {
