@@ -54,14 +54,14 @@ public class UpdateParameters extends AppCompatActivity {
         textLightDuration=findViewById(R.id.lightDuration);
         textNutrients=findViewById(R.id.nutrients);
         update=findViewById(R.id.update);
-        maxTemp= FirebaseDatabase.getInstance().getReference("AndroidSensor").child("maxTemp");
-        minTemp= FirebaseDatabase.getInstance().getReference("AndroidSensor").child("minTemp");
-        maxPh= FirebaseDatabase.getInstance().getReference("AndroidSensor").child("maxPh");
-        minPh= FirebaseDatabase.getInstance().getReference("AndroidSensor").child("minPh");
-        maxRh= FirebaseDatabase.getInstance().getReference("AndroidSensor").child("maxRh");
-        minRh= FirebaseDatabase.getInstance().getReference("AndroidSensor").child("minRh");
-        lightDuration= FirebaseDatabase.getInstance().getReference("AndroidSensor").child("lightDuration");
-        nutrients= FirebaseDatabase.getInstance().getReference("AndroidSensor").child("nutrients");
+        maxTemp= FirebaseDatabase.getInstance().getReference("Puneet").child("maxTemp");
+        minTemp= FirebaseDatabase.getInstance().getReference("Puneet").child("minTemp");
+        maxPh= FirebaseDatabase.getInstance().getReference("Puneet").child("maxPh");
+        minPh= FirebaseDatabase.getInstance().getReference("Puneet").child("minPh");
+        maxRh= FirebaseDatabase.getInstance().getReference("Puneet").child("maxRh");
+        minRh= FirebaseDatabase.getInstance().getReference("Puneet").child("minRh");
+        lightDuration= FirebaseDatabase.getInstance().getReference("Puneet").child("lightDuration");
+        nutrients= FirebaseDatabase.getInstance().getReference("Puneet").child("nutrients");
 //
         maxTemp.addValueEventListener(new ValueEventListener() {
             @Override

@@ -48,7 +48,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp">
 
-            <EditText
+            <TextView
                 android:layout_width="0dp"
                 android:gravity="start"
                 android:text="@string/min_temp"
@@ -59,7 +59,7 @@
 
                 android:textSize="20sp"/>
 
-            <EditText
+            <TextView
                 android:layout_width="0dp"
                 android:gravity="start"
                 android:text="@string/max_temp"
@@ -110,7 +110,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp">
 
-            <EditText
+            <TextView
                 android:layout_width="0dp"
                 android:gravity="start"
                 android:text="@string/min_ph"
@@ -121,7 +121,7 @@
                 android:layout_marginLeft="10dp"
                 android:textSize="20sp"            />
 
-            <EditText
+            <TextView
                 android:layout_width="0dp"
                 android:gravity="start"
                 android:text="@string/max_ph"
@@ -172,7 +172,7 @@
             android:layout_marginTop="10dp"
             >
 
-            <EditText
+            <TextView
                 android:layout_width="0dp"
                 android:gravity="start"
                 android:text="@string/light_duration"
@@ -183,7 +183,7 @@
                 android:textStyle="bold"
                 />
 
-            <EditText
+            <TextView
                 android:layout_width="0dp"
                 android:gravity="start"
                 android:text="@string/nutrients"
@@ -233,7 +233,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp">
 
-            <EditText
+            <TextView
                 android:layout_width="0dp"
                 android:gravity="start"
                 android:text="@string/min_rh"
@@ -244,7 +244,7 @@
                 android:layout_marginLeft="10dp"
                 android:textSize="20sp"              />
 
-            <EditText
+            <TextView
                 android:layout_width="0dp"
                 android:gravity="start"
                 android:text="@string/max_rh"
