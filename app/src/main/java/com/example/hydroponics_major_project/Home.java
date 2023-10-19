@@ -35,12 +35,5 @@ public class Home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        wifiButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), BluetoothHandler.class);
-                startActivity(intent);
-            }
-        });
     }
 }

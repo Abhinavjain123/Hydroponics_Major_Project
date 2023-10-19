@@ -62,8 +62,5 @@ public class MainActivity extends AppCompatActivity {
 //                startActivity(i);
 //            }
 //        });
-
-        ThingspeakClient client = new ThingspeakClient();
-        client.execute("https://api.thingspeak.com/channels/2080835/feeds.json?api_key=SPJO1DKYA6LX64QW&results=3");
     }
 }
