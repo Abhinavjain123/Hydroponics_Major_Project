@@ -61,17 +61,17 @@ public class LiveStatus extends AppCompatActivity {
         textTemp=findViewById(R.id.tempTextView);
         textPh=findViewById(R.id.phTextView);
         textWater=findViewById(R.id.waterLevelTextView);
-        textLight=findViewById(R.id.lightTextView);
-        textCrop=findViewById(R.id.cropNameTextView);
+        //textLight=findViewById(R.id.lightTextView);
+        //textCrop=findViewById(R.id.cropNameTextView);
         textNutrient=findViewById(R.id.nutrientTextView);
-        humidName= FirebaseDatabase.getInstance().getReference("Sensor").child("humid");
-        lightName= FirebaseDatabase.getInstance().getReference("Sensor").child("light");
-        cropName= FirebaseDatabase.getInstance().getReference("Sensor").child("cropName");
-        nutrientName= FirebaseDatabase.getInstance().getReference("Sensor").child("nutrients");
-        humidName= FirebaseDatabase.getInstance().getReference("Sensor").child("humid");
-        tempName= FirebaseDatabase.getInstance().getReference("Sensor").child("temp");
-        phName= FirebaseDatabase.getInstance().getReference("Sensor").child("ph");
-        waterName= FirebaseDatabase.getInstance().getReference("Sensor").child("water_value");
+        //humidName= FirebaseDatabase.getInstance().getReference("Puneet").child("humid");
+        //lightName= FirebaseDatabase.getInstance().getReference("Sensor").child("light");
+        //cropName= FirebaseDatabase.getInstance().getReference("Sensor").child("cropName");
+        nutrientName= FirebaseDatabase.getInstance().getReference("Puneet").child("nutrients");
+        humidName= FirebaseDatabase.getInstance().getReference("Puneet").child("humidity");
+        tempName= FirebaseDatabase.getInstance().getReference("Puneet").child("temp");
+        phName= FirebaseDatabase.getInstance().getReference("Puneet").child("ph");
+        waterName= FirebaseDatabase.getInstance().getReference("Puneet").child("water_level");
         humidName.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -125,36 +125,36 @@ public class LiveStatus extends AppCompatActivity {
 
             }
         });
-        cropName.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.exists())
-                {
-                    String data=snapshot.getValue().toString();
-                    textCrop.setText(data);
-                }
-            }
+//        cropName.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                if(snapshot.exists())
+//                {
+//                    String data=snapshot.getValue().toString();
+//                    textCrop.setText(data);
+//                }
+//            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-        lightName.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.exists())
-                {
-                    String data=snapshot.getValue().toString();
-                    textLight.setText(data);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
+//        lightName.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                if(snapshot.exists())
+//                {
+//                    String data=snapshot.getValue().toString();
+//                    textLight.setText(data);
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
         nutrientName.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
