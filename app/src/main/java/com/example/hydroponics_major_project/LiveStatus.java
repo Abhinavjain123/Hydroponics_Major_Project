@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import java.text.DecimalFormat;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +16,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import java.text.DecimalFormat;
 
 public class LiveStatus extends AppCompatActivity {
 //    @Override
@@ -57,6 +60,8 @@ public class LiveStatus extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.crop_live_statue);
+        DecimalFormat df = new DecimalFormat("0.00");
+        df.setMaximumFractionDigits(2);
         textHumid=findViewById(R.id.rhTextView);
         textTemp=findViewById(R.id.tempTextView);
         textPh=findViewById(R.id.phTextView);
@@ -77,7 +82,7 @@ public class LiveStatus extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists())
                 {
-                    String data=snapshot.getValue().toString();
+                    String data=df.format(Float.parseFloat(snapshot.getValue().toString()));;
                     textHumid.setText(data);
                 }
             }
@@ -90,7 +95,7 @@ public class LiveStatus extends AppCompatActivity {
         tempName.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String data=snapshot.getValue().toString();
+                String data=df.format(Float.parseFloat(snapshot.getValue().toString()));;
                 textTemp.setText(data);
             }
 
@@ -103,7 +108,7 @@ public class LiveStatus extends AppCompatActivity {
         phName.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String data=snapshot.getValue().toString();
+                String data=df.format(Float.parseFloat(snapshot.getValue().toString()));;
                 textPh.setText(data);
             }
 
@@ -116,7 +121,7 @@ public class LiveStatus extends AppCompatActivity {
         waterName.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String data=snapshot.getValue().toString();
+                String data=df.format(Float.parseFloat(snapshot.getValue().toString()));;
                 textWater.setText(data);
             }
 
@@ -160,7 +165,7 @@ public class LiveStatus extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists())
                 {
-                    String data=snapshot.getValue().toString();
+                    String data=df.format(Float.parseFloat(snapshot.getValue().toString()));;
                     textNutrient.setText(data);
                 }
             }
