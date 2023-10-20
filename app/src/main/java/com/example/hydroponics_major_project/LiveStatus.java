@@ -25,18 +25,12 @@ public class LiveStatus extends AppCompatActivity {
 //        super.onCreate(savedInstanceState);
 //        setContentView(R.layout.crop_live_statue);
 //        String cropName = getIntent().getStringExtra("cropName");
-//        Button backButton = (Button) findViewById(R.id.live_status_back);
+
 //
 //        TextView cropNameTextView = (TextView) findViewById(R.id.cropNameTextView);
 //        cropNameTextView.setText(cropName);
 //
-//        backButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent i = new Intent(getApplicationContext(), ScrollActivity.class);
-//                startActivity(i);
-//            }
-//        });
+
 //
 //        ThingspeakClient client = new ThingspeakClient();
 //        AsyncTask<String, String, String> a = client.execute("https://api.thingspeak.com/channels/2080835/feeds.json?api_key=SPJO1DKYA6LX64QW&results=1");
@@ -77,6 +71,15 @@ public class LiveStatus extends AppCompatActivity {
         tempName= FirebaseDatabase.getInstance().getReference("Puneet").child("temp");
         phName= FirebaseDatabase.getInstance().getReference("Puneet").child("ph");
         waterName= FirebaseDatabase.getInstance().getReference("Puneet").child("water_level");
+
+        Button backButton = (Button) findViewById(R.id.live_status_back);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(i);
+            }
+        });
         humidName.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

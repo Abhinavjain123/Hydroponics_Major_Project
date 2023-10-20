@@ -101,15 +101,7 @@
                 android:textSize="18sp"
                 app:cornerRadius="20dp" />
 
-            <Button
-                android:id="@+id/wifiButton"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="25dp"
-                android:backgroundTint="@color/green_theme_background"
-                android:text="Connect To Wifi"
-                android:textSize="18sp"
-                app:cornerRadius="20dp" />
+
 
         </LinearLayout>
 

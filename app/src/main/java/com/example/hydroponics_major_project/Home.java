@@ -19,7 +19,6 @@ public class Home extends AppCompatActivity {
 
         Button home_loginButton = findViewById(R.id.home_loginButton);
         Button home_registerButton = findViewById(R.id.home_registerButton);
-        Button wifiButton = findViewById(R.id.wifiButton);
 
         home_loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
