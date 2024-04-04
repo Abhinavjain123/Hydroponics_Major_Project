@@ -25,6 +25,7 @@ public class UpdateParameters extends AppCompatActivity {
     private DatabaseReference minNutrient;
     private DatabaseReference maxNutrient;
     private DatabaseReference lightDuration;
+    private DatabaseReference minHumidity;
 //    private DatabaseReference nutrients;
     private EditText textMinTemp;
     private EditText textMaxTemp;
@@ -32,6 +33,7 @@ public class UpdateParameters extends AppCompatActivity {
     private EditText textMaxPh;
     private EditText textMinRh;
     private EditText textMaxRh;
+    private EditText textMinHumidity;
     private EditText textLightDuration;
 //    private EditText textNutrients;
     private Button update;
@@ -49,6 +51,7 @@ public class UpdateParameters extends AppCompatActivity {
         textMaxRh=findViewById(R.id.maxNutrient);
         textMinRh=findViewById(R.id.minNutrient);
         textLightDuration=findViewById(R.id.lightDuration);
+        textMinHumidity=findViewById(R.id.minHumidity);
 //        textNutrients=findViewById(R.id.nutrients);
         update=findViewById(R.id.update);
         maxTemp= FirebaseDatabase.getInstance().getReference("Puneet").child("maxTemp");
@@ -58,6 +61,7 @@ public class UpdateParameters extends AppCompatActivity {
         maxNutrient= FirebaseDatabase.getInstance().getReference("Puneet").child("maxNutrient");
         minNutrient= FirebaseDatabase.getInstance().getReference("Puneet").child("minNutrient");
         lightDuration= FirebaseDatabase.getInstance().getReference("Puneet").child("lightDuration");
+        minHumidity= FirebaseDatabase.getInstance().getReference("Puneet").child("minHumidity");
 //        nutrients= FirebaseDatabase.getInstance().getReference("Puneet").child("nutrients");
 //
         maxTemp.addValueEventListener(new ValueEventListener() {
@@ -165,6 +169,20 @@ public class UpdateParameters extends AppCompatActivity {
 
             }
         });
+        minHumidity.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists()){
+                    String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
+                    textMinHumidity.setText(data);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
 //        nutrients.addValueEventListener(new ValueEventListener() {
 //            @Override
 //            public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -190,6 +208,7 @@ public class UpdateParameters extends AppCompatActivity {
                 Float rh1=Float.parseFloat(textMaxRh.getText().toString());
                 Float rh2=Float.parseFloat(textMinRh.getText().toString());
                 Float light=Float.parseFloat(textLightDuration.getText().toString());
+                Float humidity=Float.parseFloat(textMinHumidity.getText().toString());
 //                Float nutrie=Float.parseFloat(textNutrients.getText().toString());
                  maxTemp.setValue(Temp1);
                  minTemp.setValue(Temp2);
@@ -198,6 +217,7 @@ public class UpdateParameters extends AppCompatActivity {
                  maxNutrient.setValue(rh1);
                  minNutrient.setValue(rh2);
                  lightDuration.setValue(light);
+                 minHumidity.setValue(humidity);
 //                 nutrients.setValue(nutrie);
                 Intent i = new Intent(getApplicationContext(), SetParameters.class);
                 startActivity(i);

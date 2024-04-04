@@ -40,6 +40,7 @@
     <string name="welcome">Welcome!</string>
     <string name="min_nutrient">Min Nutrient</string>
     <string name="max_nutrient">Max Nutrient</string>
+    <string name="min_humidity">Min Humidity</string>
 
 
     <string-array name="crops">

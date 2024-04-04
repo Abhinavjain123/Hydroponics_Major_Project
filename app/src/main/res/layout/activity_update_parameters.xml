@@ -238,6 +238,15 @@
                 android:layout_marginLeft="10dp"
                 android:textSize="20sp"
                 android:textStyle="bold" />
+            <TextView
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="@string/min_humidity"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
         <LinearLayout
@@ -255,8 +264,18 @@
                 android:hint="12 (hrs)"
                 android:padding="10dp"
                 android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/minHumidity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:hint="20 (%Rh)"
+                android:padding="10dp"
+                android:textSize="20sp"/>
 
         </LinearLayout>
+
 
         <View
             android:layout_width="match_parent"

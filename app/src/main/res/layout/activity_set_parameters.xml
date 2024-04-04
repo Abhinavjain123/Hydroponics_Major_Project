@@ -322,7 +322,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="start"
-                android:hint="12 RH"
+                android:hint="20 (%Rh)"
                 android:padding="10dp"
                 android:textSize="20sp"/>
         </LinearLayout>
