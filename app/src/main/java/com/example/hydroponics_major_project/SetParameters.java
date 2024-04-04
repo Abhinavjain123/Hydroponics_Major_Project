@@ -24,6 +24,7 @@ public class SetParameters extends AppCompatActivity{
     private DatabaseReference minNutrient;
     private DatabaseReference maxNutrient;
     private DatabaseReference lightDuration;
+    private DatabaseReference minHumidity;
 //    private DatabaseReference nutrients;
     private TextView textMinTemp;
     private TextView textMaxTemp;
@@ -32,6 +33,7 @@ public class SetParameters extends AppCompatActivity{
     private TextView textMinRh;
     private TextView textMaxRh;
     private TextView textLightDuration;
+    private TextView textMinHumidity;
 //    private TextView textNutrients;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +48,7 @@ public class SetParameters extends AppCompatActivity{
         textMaxRh=findViewById(R.id.maxRh);
         textMinRh=findViewById(R.id.minRh);
         textLightDuration=findViewById(R.id.lightDuration);
+        textMinHumidity=findViewById(R.id.minHumidity);
 //        textNutrients=findViewById(R.id.nutrients);
         maxTemp= FirebaseDatabase.getInstance().getReference("Puneet").child("maxTemp");
         minTemp= FirebaseDatabase.getInstance().getReference("Puneet").child("minTemp");
@@ -54,6 +57,7 @@ public class SetParameters extends AppCompatActivity{
         maxNutrient= FirebaseDatabase.getInstance().getReference("Puneet").child("maxNutrient");
         minNutrient= FirebaseDatabase.getInstance().getReference("Puneet").child("minNutrient");
         lightDuration= FirebaseDatabase.getInstance().getReference("Puneet").child("lightDuration");
+        minHumidity=FirebaseDatabase.getInstance().getReference("Puneet").child("minHumidity");
 //        nutrients= FirebaseDatabase.getInstance().getReference("Puneet").child("nutrients");
         maxTemp.addValueEventListener(new ValueEventListener() {
             @Override
@@ -61,6 +65,7 @@ public class SetParameters extends AppCompatActivity{
                 if(snapshot.exists())
                 {
                     String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
+                    data=data+" \u2103";
                     textMaxTemp.setText(data);
                 }
             }
@@ -77,6 +82,7 @@ public class SetParameters extends AppCompatActivity{
                 if(snapshot.exists())
                 {
                     String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
+                    data=data+" \u2103";
                     textMinTemp.setText(data);
                 }
             }
@@ -92,6 +98,7 @@ public class SetParameters extends AppCompatActivity{
                 if(snapshot.exists())
                 {
                     String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
+                    data=data+" ph";
                     textMaxPh.setText(data);
                 }
             }
@@ -108,6 +115,7 @@ public class SetParameters extends AppCompatActivity{
                 if(snapshot.exists())
                 {
                     String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
+                    data=data+" ph";
                     textMinPh.setText(data);
                 }
             }
@@ -124,6 +132,7 @@ public class SetParameters extends AppCompatActivity{
                 if(snapshot.exists())
                 {
                     String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
+                    data=data+" ppm";
                     textMaxRh.setText(data);
                 }
             }
@@ -140,6 +149,7 @@ public class SetParameters extends AppCompatActivity{
                 if(snapshot.exists())
                 {
                     String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
+                    data=data+" ppm";
                     textMinRh.setText(data);
                 }
             }
@@ -156,7 +166,25 @@ public class SetParameters extends AppCompatActivity{
                 if(snapshot.exists())
                 {
                     String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
+                    data=data+" hrs";
                     textLightDuration.setText(data);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        minHumidity.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists())
+                {
+                    String data=df.format(Float.parseFloat(snapshot.getValue().toString()));
+                    data=data+" %";
+                    textMinHumidity.setText(data);
                 }
             }
 

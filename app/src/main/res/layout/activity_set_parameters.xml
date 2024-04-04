@@ -291,7 +291,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:gravity="start"
-                android:text="Min Humidity"
+                android:text="Min Humidity (RH)"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp"
@@ -322,7 +322,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="start"
-                android:hint="20 (%Rh)"
+                android:hint="12% RH"
                 android:padding="10dp"
                 android:textSize="20sp"/>
         </LinearLayout>
